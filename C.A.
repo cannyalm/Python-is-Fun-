@@ -1,0 +1,14 @@
+# First name: Canny Almonte
+# Fun Fact: I'm learning how to code!
+name = """
+  CCC         A
+C     C    A    A
+C         A      A
+C         A A A A A
+C         A       A
+C     C   A       A
+  CCC     A       A
+"""
+
+  
+print(name)
