@@ -1,0 +1,35 @@
+#Write a shipping.py Python program that asks the user for the weight of their package and then tells them which method of shipping is cheapest and how much it will cost to ship their package using Sal’s Shippers.
+
+weight = 1.5
+
+#Ground Shipping
+if weight <= 2:
+  cost_ground = weight * 1.50 + 20.00
+elif weight > 2 and weight <= 6:
+  cost_ground = weight * 3.00 + 20.00
+elif weight > 6 and weight <= 10:
+  cost_ground = weight * 4.00 + 20.00
+elif weight > 10:
+  cost_ground = weight * 4.75 + 20.00
+
+#print(cost_ground)
+
+#cost_ground_premium = 125.00
+
+#print("Ground Shipping Premium $", cost_ground_premium)
+
+#Drone Shipping
+if weight <= 2:
+  cost_drone = weight * 4.50 + 0.00
+elif weight > 2 and weight <= 6:
+  cost_drone = weight * 9.00 + 0.00
+elif weight > 6 and weight <= 10:
+  cost_drone = weight * 12.00 + 0.00
+elif weight > 10:
+  cost_drone = weight * 14.25 + 0.00
+
+if cost_drone > cost_ground:
+  print ("We suggest you ship this package via Ground Shipping! It is our most affordable option. The total cost would be: $" + str(cost_ground))
+elif cost_ground > cost_drone:
+  print ("We suggest you ship this package via Drone Shipping! It is our most affordable option. The total cost would be: $" + str(cost_drone))
+
